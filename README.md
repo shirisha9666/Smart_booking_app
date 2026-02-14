@@ -169,4 +169,3 @@ Supabase Authentication URLs configured for production redirect.
 
 
 
-Submit your work here: https://forms.gle/cHiDwq5g12wxoVgG7
