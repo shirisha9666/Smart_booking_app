@@ -6,12 +6,13 @@ import { motion } from "framer-motion";
 import { FcGoogle } from "react-icons/fc";
 
 
+let url="https://smart-booking-app-black.vercel.app"
 const Login = () => {
   const loginWithGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "http://localhost:3000/auth/callback",
+         redirectTo: `${window.location.origin}/auth/callback`,
       },
     });
   };
