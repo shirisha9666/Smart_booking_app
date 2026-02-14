@@ -40,7 +40,7 @@ const Login = () => {
               transition={{ delay: 0.3 }}
               className="text-gray-500"
             >
-              Sign in to access your smart booking dashboard
+              Sign in to access your smart booking App
             </motion.p>
           </div>
 
