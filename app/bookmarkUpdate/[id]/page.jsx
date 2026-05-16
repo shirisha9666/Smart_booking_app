@@ -10,6 +10,7 @@ import { useParams, useRouter } from "next/navigation";
 import { getCurrentUser } from "../../../lib/getUser";
 import Header from "../../../components/Header";
 import { getBookmarkById } from "../../../services/bookmarkService";
+import toast from "react-hot-toast";
 
 const UpdateBookMark = () => {
   const { id } = useParams();
@@ -58,7 +59,7 @@ const UpdateBookMark = () => {
 
       if (error) throw error;
 
-      alert("Bookmark updated");
+      toast.success("Bookmark updated");
 
       router.push("/auth/callback"); // go back to list
     } catch (err) {

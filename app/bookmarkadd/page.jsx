@@ -8,6 +8,7 @@ import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
 import Header from "../../components/Header";
 import { getCurrentUser } from "../../lib/getUser";
+import toast from "react-hot-toast";
 
 const AddBookmark = () => {
   const router = useRouter();
@@ -53,7 +54,8 @@ const handleSubmit = async (e) => {
 
     // 3. Success
     console.log("Inserted:", data);
-    alert("Bookmark added successfully");
+    toast.success("Bookmark added successfully")
+
 
     setTitle("");
     setUrl("");
