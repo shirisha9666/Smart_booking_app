@@ -122,10 +122,10 @@ const Dashboard = () => {
             <p className="text-center text-gray-400 py-6">Loading...</p>
           ) : bookmarks.length === 0 ? (
             <div className="text-center py-12">
-              <Bookmark className="h-12 w-12 text-gray-300 mx-auto mb-3" />
-              <p className="text-gray-500 font-medium">No bookmarks yet</p>
-              <p className="text-gray-400 text-sm">Click "Add Bookmarks" to save your first link</p>
-            </div>
+      <Bookmark className="h-12 w-12 text-gray-300 mx-auto mb-3" />
+      <p className="text-gray-500 font-medium">No bookmarks yet</p>
+      <p className="text-gray-400 text-sm">Click "Add Bookmarks" to save your first link</p>
+    </div>
           ) : (
             bookmarks.map((item) => (
               <div key={item.id} className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
